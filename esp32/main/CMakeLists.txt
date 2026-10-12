@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "camera.c"
+        "wifi_stream.c"
+        "spi_master.c"
+        "image_proc.c"
+        "inference.cpp"
+        "test_mode.c"
+    INCLUDE_DIRS
+        "include"
+        "."
+    REQUIRES
+        esp_wifi
+        esp_event
+        esp_timer
+        nvs_flash
+        esp_netif
+        esp_driver_gpio
+        esp_driver_ledc
+        esp_driver_spi
+)
